@@ -10,12 +10,38 @@ import SwiftUI
 struct View2Detail: View {
     
     @EnvironmentObject var AccVM : AccountViewModel
+    @Binding var SS : String
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Form{
+                Section(header: Text("Nombre")){
+                    TextField("Nombre", text: $AccVM.name)
+                }
+                Section(header: Text("Edad")){
+                    HStack{
+                        TextField("Edad", value: $AccVM.age, formatter: NumberFormatter())
+                            .keyboardType(.numberPad)
+                        Stepper("", value: $AccVM.age, in: 0...100)
+                    }
+                }
+                Section(header: Text("State Variable")){
+                    TextField("State Variable", text: $SS)
+                }
+            }
+        }
     }
 }
 
-#Preview {
-    View2Detail()
+
+struct View2Detail_Previews: PreviewProvider {
+    static var previews: some View {
+        View2Detail(SS: .constant(""))
+            .environmentObject(AccountViewModel())
+        
+        View2Detail(SS: .constant(""))
+            .environmentObject(AccountViewModel())
+            .previewDevice("iPhone SE (3rd generation)")
+            .preferredColorScheme(.dark)
+    }
 }
