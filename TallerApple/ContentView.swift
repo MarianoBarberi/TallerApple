@@ -9,28 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var movieVM = MovieViewModel()
+    @State private var searchText : String = ""
+    
+    var searchFilter: [MovieModel] {
+        guard !searchText.isEmpty else { return movieVM.arrMovies }
+        return movieVM.arrMovies.filter { movie in
+                movie.titulo!.lowercased().contains(searchText.lowercased())
+            }
+        }
 
     var body: some View {
         NavigationView {
             ScrollView {
                 VStack {
                     
-                    Rectangle()
-                        .foregroundColor(.blue)
-                        .frame(width: 300, height: 100)
-                        .cornerRadius(10)
-                        .overlay(content: {
-                            Text("Titulo1")
-                        })
-                    Rectangle()
-                        .foregroundColor(.blue)
-                        .frame(width: 300, height: 100)
-                        .cornerRadius(10)
-                        .overlay(alignment: .topLeading ,content: {
-                            Text("Titulo1")
-                                .padding()
-                        })
-                        .padding()
                     ScrollView (.horizontal){
                         HStack {
                             /*Image("default")
@@ -53,11 +45,19 @@ struct ContentView: View {
                                                label: { MovieItemView(movie: item)})
                             }
                         }//HStack
-                        .padding()
+                    }
+                    ScrollView (.horizontal){
+                        HStack{
+                            ForEach(searchFilter) { item in
+                                NavigationLink(destination: MovieDetailView(movie: item),
+                                               label: { MovieItemView(movie: item)})
+                            }
+                        }
                     }
                     
                 }//VStack
-                .padding()
+                .navigationTitle("Peliculas")
+                .searchable(text: $searchText)
             }//ScrollView
         }//NavigationView
     }

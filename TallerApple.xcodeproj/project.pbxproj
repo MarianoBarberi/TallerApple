@@ -19,6 +19,7 @@
 		D62BC8DC2B1FDD9A00A9BAED /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BC8DB2B1FDD9A00A9BAED /* MovieViewModel.swift */; };
 		D62BC8DE2B1FE02100A9BAED /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BC8DD2B1FE02100A9BAED /* MovieDetailView.swift */; };
 		D62BC8E02B1FE4B300A9BAED /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62BC8DF2B1FE4B300A9BAED /* View2.swift */; };
+		F87898F82B20E44800F1AD36 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87898F72B20E44800F1AD36 /* MainView.swift */; };
 		F8A50CC42B202AEE00D313D2 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A50CC32B202AEE00D313D2 /* AccountViewModel.swift */; };
 		F8A50CC62B202DAA00D313D2 /* View2Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A50CC52B202DAA00D313D2 /* View2Detail.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		D62BC8DB2B1FDD9A00A9BAED /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
 		D62BC8DD2B1FE02100A9BAED /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 		D62BC8DF2B1FE4B300A9BAED /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
+		F87898F72B20E44800F1AD36 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		F8A50CC32B202AEE00D313D2 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F8A50CC52B202DAA00D313D2 /* View2Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2Detail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				D62BC8AD2B1FBDE700A9BAED /* TallerAppleApp.swift */,
+				F87898F72B20E44800F1AD36 /* MainView.swift */,
 				D62BC8DF2B1FE4B300A9BAED /* View2.swift */,
 				F8A50CC52B202DAA00D313D2 /* View2Detail.swift */,
 				D62BC8AF2B1FBDE700A9BAED /* ContentView.swift */,
@@ -281,6 +284,7 @@
 				D62BC8DE2B1FE02100A9BAED /* MovieDetailView.swift in Sources */,
 				D62BC8B02B1FBDE700A9BAED /* ContentView.swift in Sources */,
 				F8A50CC42B202AEE00D313D2 /* AccountViewModel.swift in Sources */,
+				F87898F82B20E44800F1AD36 /* MainView.swift in Sources */,
 				D62BC8D82B1FD7BB00A9BAED /* MovieItemView.swift in Sources */,
 				D62BC8DA2B1FDD1C00A9BAED /* MovieModel.swift in Sources */,
 				D62BC8E02B1FE4B300A9BAED /* View2.swift in Sources */,
