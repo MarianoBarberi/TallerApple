@@ -17,5 +17,5 @@ struct MovieModel : Identifiable {
 
 extension MovieModel {
     
-    public static var defaultMovie = MovieModel(titulo: "Chichen Itza", descripcion: "El Templo Kukulcán es la construcción más conocida de Chichen Itzá, el sitio arqueológico maya que se encuentra en el norte de la península de Yucatán.", url: "",nombreImagen: "ChichenItza")
+    public static var defaultMovie = MovieModel(titulo: "The Batman", descripcion: "On Halloween, Gotham City mayor Don Mitchell Jr. is murdered by the Riddler, a masked serial killer. Reclusive billionaire Bruce Wayne, who has operated for two years as the vigilante Batman, investigates the murder alongside the Gotham City Police Department (GCPD).",url:"https://youtu.be/fWQrd6cwJ0A?si=Mj_QByHYHHwUZv77", nombreImagen: "batman")
 }

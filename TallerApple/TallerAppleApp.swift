@@ -12,7 +12,7 @@ struct TallerAppleApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            MainView()
+            MainView().ignoresSafeArea()
         }
     }
 }

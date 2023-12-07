@@ -66,7 +66,8 @@ struct View2: View {
                                 }
                             }
                             .alert(isPresented: $isShown){
-                                Alert(title: Text("titulo"), message: Text("Alerta SwiftUI"), dismissButton: .default(Text("OK")))
+                                /*Alert(title: Text("titulo"), message: Text("Alerta SwiftUI"), dismissButton: .default(Text("OK")))*/
+                                Alert(title: Text("titulo"), message: Text("Alerta SwiftUI"), primaryButton: .default(Text("OK")), secondaryButton: .destructive(Text("Cancel")))
                             }
                         }
                         
