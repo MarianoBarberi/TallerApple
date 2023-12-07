@@ -32,7 +32,6 @@ struct View2: View {
                 }
 
                 HStack{
-                    Spacer()
                     Text(accVM.name)
                     Spacer()
                     Text("\(accVM.age)")
@@ -43,6 +42,7 @@ struct View2: View {
                     Spacer()
                     Text(accVM.gender ? "Hombre" : "Mujer")
                 }
+                .padding(.horizontal)
                 Text(SS)
                     .padding(.top)
                 Divider()
