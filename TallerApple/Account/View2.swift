@@ -28,6 +28,7 @@ struct View2: View {
                         .environmentObject(accVM)){
                             Image(systemName: "gearshape.fill")
                                 .resizable()
+                                .foregroundColor(.accentColor)
                                 .frame(width: 30, height: 30)
                         }
                         .padding([.trailing, .bottom])

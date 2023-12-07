@@ -2,13 +2,8 @@
   "colors" : [
     {
       "color" : {
-        "color-space" : "srgb",
-        "components" : {
-          "alpha" : "1.000",
-          "blue" : "0.341",
-          "green" : "0.788",
-          "red" : "0.333"
-        }
+        "platform" : "universal",
+        "reference" : "systemPinkColor"
       },
       "idiom" : "universal"
     },
@@ -21,7 +16,7 @@
       ],
       "color" : {
         "platform" : "universal",
-        "reference" : "systemPinkColor"
+        "reference" : "systemGreenColor"
       },
       "idiom" : "universal"
     }
@@ -29,5 +24,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
   }
 }
