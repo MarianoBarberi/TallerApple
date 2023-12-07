@@ -42,7 +42,6 @@ struct View2: View {
                     Text("\(accVM.height, specifier: "%.2f") m")
                     Spacer()
                     Text(accVM.gender ? "Hombre" : "Mujer")
-                    Spacer()
                 }
                 Text(SS)
                     .padding(.top)

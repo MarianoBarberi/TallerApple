@@ -63,6 +63,12 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+        
+        ContentView()
+            .previewDevice("iPhone SE (3rd generation)")
+            .preferredColorScheme(.dark)
+    }
 }

@@ -22,6 +22,12 @@ struct MovieItemView: View {
     }
 }
 
-#Preview {
-    MovieItemView(movie: MovieModel.defaultMovie)
+struct MovieItemView_Previews: PreviewProvider {
+    static var previews: some View {
+        MovieItemView(movie: MovieModel.defaultMovie)
+        
+        MovieItemView(movie: MovieModel.defaultMovie)
+            .previewDevice("iPhone SE (3rd generation)")
+            .preferredColorScheme(.dark)
+    }
 }

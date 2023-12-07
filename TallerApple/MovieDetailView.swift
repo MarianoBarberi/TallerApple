@@ -41,6 +41,12 @@ struct MovieDetailView: View {
 
 
 
-#Preview {
-    MovieDetailView(movie : MovieModel.defaultMovie)
+struct MovieDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        MovieDetailView(movie : MovieModel.defaultMovie)
+        
+        MovieDetailView(movie : MovieModel.defaultMovie)
+            .previewDevice("iPhone SE (3rd generation)")
+            .preferredColorScheme(.dark)
+    }
 }
