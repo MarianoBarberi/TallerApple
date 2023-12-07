@@ -112,14 +112,8 @@
 			children = (
 				D62BC8AD2B1FBDE700A9BAED /* TallerAppleApp.swift */,
 				F87898F72B20E44800F1AD36 /* MainView.swift */,
-				D62BC8DF2B1FE4B300A9BAED /* View2.swift */,
-				F8A50CC52B202DAA00D313D2 /* View2Detail.swift */,
-				D62BC8AF2B1FBDE700A9BAED /* ContentView.swift */,
-				D62BC8DD2B1FE02100A9BAED /* MovieDetailView.swift */,
-				D62BC8D92B1FDD1C00A9BAED /* MovieModel.swift */,
-				D62BC8DB2B1FDD9A00A9BAED /* MovieViewModel.swift */,
-				D62BC8D72B1FD7BB00A9BAED /* MovieItemView.swift */,
-				F8A50CC32B202AEE00D313D2 /* AccountViewModel.swift */,
+				FBCCC94D2B22502D004262D5 /* Home */,
+				FBCCC94C2B22500B004262D5 /* Account */,
 				D62BC8B12B1FBDE800A9BAED /* Assets.xcassets */,
 				D62BC8B32B1FBDE800A9BAED /* Preview Content */,
 			);
@@ -149,6 +143,28 @@
 				D62BC8CA2B1FBDE900A9BAED /* TallerAppleUITestsLaunchTests.swift */,
 			);
 			path = TallerAppleUITests;
+			sourceTree = "<group>";
+		};
+		FBCCC94C2B22500B004262D5 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D62BC8DF2B1FE4B300A9BAED /* View2.swift */,
+				F8A50CC52B202DAA00D313D2 /* View2Detail.swift */,
+				F8A50CC32B202AEE00D313D2 /* AccountViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FBCCC94D2B22502D004262D5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D62BC8AF2B1FBDE700A9BAED /* ContentView.swift */,
+				D62BC8DD2B1FE02100A9BAED /* MovieDetailView.swift */,
+				D62BC8D92B1FDD1C00A9BAED /* MovieModel.swift */,
+				D62BC8DB2B1FDD9A00A9BAED /* MovieViewModel.swift */,
+				D62BC8D72B1FD7BB00A9BAED /* MovieItemView.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
