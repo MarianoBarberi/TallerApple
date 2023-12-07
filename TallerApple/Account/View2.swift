@@ -11,6 +11,8 @@ struct View2: View {
     
     @StateObject var accVM = AccountViewModel()
     @State private var SS = "State Variable"
+    @State private var isShown = false
+    @State private var isShownPop = false
     
     var body: some View {
         
@@ -50,25 +52,37 @@ struct View2: View {
                     HStack{
                         VStack{
                             Text("Primary")
-                            
-                            ZStack{
-                                Rectangle()
-                                    .frame(width: geometry.size.width / 3.15, height: geometry.size.width / 3.15)
-                                    .cornerRadius(15)
-                                    .foregroundColor(.primary)
-                                Rectangle()
-                                    .stroke(Color.red, lineWidth: 2)
-                                    .frame(width: 125, height: 125)
+                            Button(action: {
+                                isShown = true
+                            }){
+                                ZStack{
+                                    Rectangle()
+                                        .frame(width: geometry.size.width / 3.15, height: geometry.size.width / 3.15)
+                                        .cornerRadius(15)
+                                        .foregroundColor(.primary)
+                                    Rectangle()
+                                        .stroke(Color.red, lineWidth: 2)
+                                        .frame(width: 125, height: 125)
+                                }
                             }
-                    
+                            .alert(isPresented: $isShown){
+                                Alert(title: Text("titulo"), message: Text("Alerta SwiftUI"), dismissButton: .default(Text("OK")))
+                            }
                         }
                         
                         VStack{
                             Text("Secondary")
-                            Rectangle()
-                                .frame(width: 125, height: 125)
-                                .cornerRadius(15)
-                                .foregroundStyle(Color.secondary)
+                            
+                            Button(action: {
+                                isShownPop = true
+                            }){
+                                Rectangle()
+                                    .frame(width: 125, height: 125)
+                                    .cornerRadius(15)
+                                    .foregroundStyle(Color.secondary)
+                            }.popover(isPresented: $isShownPop){
+                                Text("hi")
+                            }
                         }
                         
                         VStack{
